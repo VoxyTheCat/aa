@@ -44,6 +44,8 @@ def overrideListener():
             daytime = now - datetime.timedelta(hours=h, minutes=m)
             print("Override set.")
             printAwake()
+        elif userInput == "time":
+            printAwake()
         else:
             print("Invalid format. Use '5h 55m' or '5:55'")
 
