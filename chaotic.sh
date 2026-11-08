@@ -21,7 +21,7 @@ _term_cols() {
 vertL="$(printf '=%.0s' $(seq 1 "$(_term_cols)"))"
 
 box_me() {
-    local s="Hyde: $*"
+    local s="$*"
     _tput setaf 3
     echo " ═${s//?/═}"
     echo "║$s ║"
